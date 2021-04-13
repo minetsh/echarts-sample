@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "时钟",
+  "usingComponents": {
+    "chart": "plugin://echarts/chart"
+  }
+}

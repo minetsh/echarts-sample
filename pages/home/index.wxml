@@ -1,0 +1,3 @@
+<view>
+  <navigator url="/sample/pages/clock/index" open-type="navigate">时钟</navigator>
+</view>
