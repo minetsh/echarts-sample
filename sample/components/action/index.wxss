@@ -1,0 +1,23 @@
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 80rpx;
+  background-color: white;
+  box-shadow: 0rpx 1rpx 8rpx rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.action::after {
+  border: none;
+}
+
+.action:active {
+  opacity: 0.7;
+}
+
+.action > image {
+  width: 60rpx;
+  height: 60rpx;
+}

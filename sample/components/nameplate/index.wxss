@@ -1,0 +1,20 @@
+.nameplate {
+  margin: 16rpx;
+  padding: 16rpx;
+  border-radius: 16rpx;
+  box-shadow: 0rpx 1rpx 8rpx rgba(0, 0, 0, 0.12);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.share {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 80rpx;
+  overflow: hidden;
+}

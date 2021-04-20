@@ -1,6 +1,10 @@
 import option from '../../options/clock';
 
 Page({
+  data: {
+    theme: 'light',
+  },
+
   onLoad() {
     this.option = option;
     this.timeUpdatedStatus = {
@@ -12,8 +16,14 @@ Page({
 
   onInstance({ detail }) {
     this.instance = detail;
-    this.instance.setOption(this.option);
+    this.onTimeTrigger();
     this.onClock();
+  },
+
+  onThemeChange({ detail }) {
+    this.setData({
+      theme: detail,
+    });
   },
 
   onClock() {
@@ -21,20 +31,24 @@ Page({
       clearInterval(this.timer);
     }
 
-    const { option } = this;
     this.timer = setInterval(() => {
-      const date = new Date();
-      const second = date.getSeconds();
-      const minute = date.getMinutes() + second / 60;
-      const hour = (date.getHours() % 12) + minute / 60;
-
-      this.updateSeries(second, option.series[2], 'second');
-      this.updateSeries(minute, option.series[1], 'minute');
-      this.updateSeries(hour, option.series[0], 'hour');
-
-      option.animationDurationUpdate = 300;
-      this.instance.setOption(option, true);
+      this.onTimeTrigger();
     }, 1000);
+  },
+
+  onTimeTrigger() {
+    const { option } = this;
+    const date = new Date();
+    const second = date.getSeconds();
+    const minute = date.getMinutes() + second / 60;
+    const hour = (date.getHours() % 12) + minute / 60;
+
+    this.updateSeries(second, option.series[2], 'second');
+    this.updateSeries(minute, option.series[1], 'minute');
+    this.updateSeries(hour, option.series[0], 'hour');
+
+    option.animationDurationUpdate = 300;
+    this.instance.setOption(option, true);
   },
 
   updateSeries(time, series, type) {
@@ -53,5 +67,17 @@ Page({
       this.timeUpdatedStatus[type] = true;
       series.clockwise = false;
     }
+  },
+
+  onShareAppMessage() {
+    return {
+      title: '时钟',
+    };
+  },
+
+  onShareTimeline() {
+    return {
+      title: '时钟',
+    };
   },
 });

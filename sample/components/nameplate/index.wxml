@@ -1,0 +1,13 @@
+<view class="nameplate">
+  <view class="row">
+    <action bind:tap="onGitHubTap">
+      <image mode="aspectFit" src="../../images/github.png" />
+    </action>
+    <action open-type="share">
+      <image mode="aspectFit" src="../../images/share.svg" />
+    </action>
+    <action bind:tap="onThemeChange" theme="{{ theme }}">
+      <image mode="aspectFit" src="{{ theme === 'light' ? '../../images/dark.svg' : '../../images/light.svg' }}" />
+    </action>
+  </view>
+</view>
