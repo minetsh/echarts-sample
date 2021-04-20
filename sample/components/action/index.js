@@ -21,7 +21,6 @@ Component({
     theme: {
       type: String,
       observer: function (theme) {
-        console.log(theme);
         this.setData({
           style: toStyle({
             ...style,

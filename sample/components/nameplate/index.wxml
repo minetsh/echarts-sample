@@ -4,10 +4,10 @@
       <image mode="aspectFit" src="../../images/github.png" />
     </action>
     <action open-type="share">
-      <image mode="aspectFit" src="../../images/share.svg" />
+      <image mode="aspectFit" src="../../images/share.png" />
     </action>
     <action bind:tap="onThemeChange" theme="{{ theme }}">
-      <image mode="aspectFit" src="{{ theme === 'light' ? '../../images/dark.svg' : '../../images/light.svg' }}" />
+      <image mode="aspectFit" src="{{ theme === 'light' ? '../../images/dark.png' : '../../images/light.png' }}" />
     </action>
   </view>
 </view>
