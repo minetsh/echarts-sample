@@ -1,11 +1,8 @@
 import option from '../../options/clock';
 
 Page({
-  data: {
-    option,
-  },
-
   onLoad() {
+    this.option = option;
     this.timeUpdatedStatus = {
       second: false,
       minute: false,
@@ -15,6 +12,7 @@ Page({
 
   onInstance({ detail }) {
     this.instance = detail;
+    this.instance.setOption(this.option);
     this.onClock();
   },
 
@@ -23,7 +21,7 @@ Page({
       clearInterval(this.timer);
     }
 
-    const { option } = this.data;
+    const { option } = this;
     this.timer = setInterval(() => {
       const date = new Date();
       const second = date.getSeconds();
