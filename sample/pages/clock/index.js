@@ -1,4 +1,4 @@
-import option from '../../options/clock';
+import option from './data';
 
 Page({
   data: {
