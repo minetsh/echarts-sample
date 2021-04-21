@@ -1,4 +1,4 @@
-<view>
+<view class="page {{ theme }}">
   <chart chart-class="chart" bindinstance="onInstance" theme="{{ theme }}" />
   <nameplate bind:themechange="onThemeChange"></nameplate>
 </view>

@@ -21,8 +21,11 @@ Page({
   },
 
   onThemeChange({ detail }) {
-    this.setData({
-      theme: detail,
+    const { theme } = this.data;
+    this.setData({ theme: detail });
+    wx.setNavigationBarColor({
+      frontColor: theme === 'light' ? '#ffffff' : '#000000',
+      backgroundColor: theme === 'light' ? '#100c2a' : '#ffffff',
     });
   },
 

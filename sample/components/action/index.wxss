@@ -4,9 +4,17 @@
   align-items: center;
   justify-content: center;
   border-radius: 80rpx;
+  overflow: hidden;
+}
+
+.light {
   background-color: white;
   box-shadow: 0rpx 1rpx 8rpx rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+}
+
+.dark {
+  background-color: #100c2a;
+  box-shadow: 0rpx 1rpx 8rpx rgba(255, 255, 255, 0.1);
 }
 
 .action::after {

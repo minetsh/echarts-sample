@@ -2,6 +2,15 @@
   margin: 16rpx;
   padding: 16rpx;
   border-radius: 16rpx;
+}
+
+.dark {
+  background-color: #100c2a;
+  box-shadow: 0rpx 1rpx 8rpx rgba(255, 255, 255, 0.12);
+}
+
+.light {
+  background-color: #ffffff;
   box-shadow: 0rpx 1rpx 8rpx rgba(0, 0, 0, 0.12);
 }
 

@@ -1,7 +1,9 @@
-page {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+.page {
+  min-height: 100vh;
+}
+
+.dark {
+  background-color: #100c2a;
 }
 
 .chart {
