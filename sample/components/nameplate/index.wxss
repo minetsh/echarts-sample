@@ -27,3 +27,16 @@
   border-radius: 80rpx;
   overflow: hidden;
 }
+
+.source {
+  display: flex;
+  font-size: 20rpx;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16rpx;
+}
+
+.link {
+  color: #337ab7;
+}

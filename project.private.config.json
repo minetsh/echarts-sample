@@ -1,4 +1,5 @@
 {
+  "setting": {},
   "condition": {
     "plugin": {
       "list": []
@@ -18,8 +19,9 @@
           "query": ""
         },
         {
-          "name": "sample/pages/clock/index",
-          "pathName": "sample/pages/clock/index",
+          "name": "sample/pages/income/index",
+          "pathName": "sample/pages/income/index",
+          "query": "",
           "scene": null
         }
       ]

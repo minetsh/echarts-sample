@@ -10,4 +10,8 @@
       <image mode="aspectFit" src="{{ theme === 'light' ? '../../images/dark.svg' : '../../images/light.svg' }}" />
     </action>
   </view>
+  <view wx:if="{{ source }}" class="source" style="{{ style }}">
+    本示例来源：
+    <view class="link" bind:tap="onSourceClick">{{ source.name }}</view>
+  </view>
 </view>

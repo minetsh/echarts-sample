@@ -3,6 +3,10 @@ import option from './data';
 Page({
   data: {
     theme: 'light',
+    source: {
+      name: 'ECharts官方网站',
+      link: 'https://echarts.apache.org/examples/zh/editor.html?c=gauge-clock',
+    },
   },
 
   onLoad() {

@@ -3,7 +3,7 @@
   "subpackages": [
     {
       "root": "sample",
-      "pages": ["pages/clock/index"]
+      "pages": ["pages/clock/index", "pages/income/index"]
     }
   ],
   "window": {
