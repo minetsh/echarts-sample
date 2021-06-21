@@ -1,5 +1,7 @@
 # ECharts Sample
 
+“ECharts 图表组件” 插件使用示例项目。
+
 ## 步骤
 
 1. 申请小程序插件，插件 APPID 为：`wx1db9e5ab1149ea03`

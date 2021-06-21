@@ -1,0 +1,3 @@
+<button class="action {{ theme }}" style="{{ style }}" open-type="{{ openType }}">
+  <slot></slot>
+</button>

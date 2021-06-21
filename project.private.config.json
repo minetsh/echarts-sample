@@ -13,12 +13,6 @@
     "miniprogram": {
       "list": [
         {
-          "id": -1,
-          "name": "db guide",
-          "pathName": "pages/databaseGuide/databaseGuide",
-          "query": ""
-        },
-        {
           "name": "sample/pages/income/index",
           "pathName": "sample/pages/income/index",
           "query": "",
