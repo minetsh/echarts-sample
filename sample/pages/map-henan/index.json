@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "动态时钟",
+  "navigationBarTitleText": "河南地图",
   "usingComponents": {
     "chart": "plugin://echarts/chart",
     "nameplate": "../../components/nameplate/index"

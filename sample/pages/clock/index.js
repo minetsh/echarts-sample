@@ -78,13 +78,13 @@ Page({
 
   onShareAppMessage() {
     return {
-      title: '时钟',
+      title: 'ECharts 插件：动态时钟',
     };
   },
 
   onShareTimeline() {
     return {
-      title: '时钟',
+      title: 'ECharts 插件：动态时钟',
     };
   },
 });

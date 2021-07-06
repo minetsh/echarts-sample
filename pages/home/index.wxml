@@ -1,8 +1,10 @@
 <view class="menu">
-  <navigator url="/sample/pages/clock/index" open-type="navigate">时钟</navigator>
+  <navigator url="/sample/pages/clock/index" open-type="navigate">动态时钟</navigator>
   <navigator url="/sample/pages/income/index" open-type="navigate">
     Income of Germany and France since 1950
   </navigator>
+  <navigator url="/sample/pages/map-hk/index" open-type="navigate">香港18区人口密度 （2011）</navigator>
+  <navigator url="/sample/pages/map-henan/index" open-type="navigate">河南地图</navigator>
   <action style="position: fixed; bottom: 100rpx; right: 100rpx;" bind:tap="onGitHubTap">
     <image class="icon" src="../../images/github_dark.png" mode="aspectFit" />
   </action>

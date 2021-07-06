@@ -3,7 +3,12 @@
   "subpackages": [
     {
       "root": "sample",
-      "pages": ["pages/clock/index", "pages/income/index"]
+      "pages": [
+        "pages/clock/index",
+        "pages/income/index",
+        "pages/map-hk/index",
+        "pages/map-henan/index"
+      ]
     }
   ],
   "window": {
@@ -15,7 +20,7 @@
   },
   "plugins": {
     "echarts": {
-      "version": "2.0.0",
+      "version": "2.1.1",
       "provider": "wx1db9e5ab1149ea03"
     }
   },

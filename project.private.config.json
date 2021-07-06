@@ -13,8 +13,8 @@
     "miniprogram": {
       "list": [
         {
-          "name": "sample/pages/income/index",
-          "pathName": "sample/pages/income/index",
+          "name": "sample/pages/map-bus/index",
+          "pathName": "sample/pages/map-bus/index",
           "query": "",
           "scene": null
         }
